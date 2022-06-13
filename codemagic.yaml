@@ -1,0 +1,3 @@
+workflows:
+  hello-world:
+    name: Hello world workflow
