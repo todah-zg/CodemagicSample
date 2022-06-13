@@ -1,3 +1,5 @@
 workflows:
-  hello-world:
-    name: Hello world workflow
+  react-native-android:
+    name: React Native Android
+    max_build_duration: 120
+    instance_type: mac_mini
