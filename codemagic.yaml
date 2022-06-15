@@ -10,4 +10,6 @@ workflows:
           echo "build: $BUILD_NUMBER"
     publishing:
       email:
-         - marijan@todah.hr
+        recipients:
+          - marijan@todah.hr
+
