@@ -3,4 +3,7 @@ workflows:
     name: React Native Android
     max_build_duration: 120
     instance_type: mac_mini
-
+    scripts:
+      - name: build number
+        script: |
+          echo $PROJECT_BUILD_NUMBER
