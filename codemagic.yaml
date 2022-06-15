@@ -6,7 +6,8 @@ workflows:
     scripts:
       - name: build number
         script: |
-          echo $PROJECT_BUILD_NUMBER
+          echo "project: $PROJECT_BUILD_NUMBER"
+          echo "build: $BUILD_NUMBER"
     publishing:
       email:
          - marijan@todah.hr
