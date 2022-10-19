@@ -27,7 +27,7 @@ workflows:
         script: | 
           source CM_ENV
           echo $TEST2
-       - name: Step 6
+      - name: Step 6
         script: | 
           source $CM_ENV
           echo $TEST2
