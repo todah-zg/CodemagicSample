@@ -19,9 +19,17 @@ workflows:
           echo $TEST1
       - name: Step 3
         script: | 
-          echo "TEST2='test 2'" >> CM_ENV
+          echo "TEST2='test 2'" >> $CM_ENV
       - name: Step 4
         script: | 
+          echo $TEST2
+      - name: Step 5
+        script: | 
+          source CM_ENV
+          echo $TEST2
+       - name: Step 6
+        script: | 
+          source $CM_ENV
           echo $TEST2
       - name: Set up keystore
         script: |
