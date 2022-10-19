@@ -10,6 +10,19 @@ workflows:
       vars:
         PACKAGE_NAME: "io.codemagic.sample.reactnative"
     scripts:
+      - name: Step 1
+        script: | 
+          echo "export TEST1='test 1'" >> CM_ENV_VARS
+      - name: Step 2
+        script: | 
+          source CM_ENV_VARS 
+          echo $TEST1
+      - name: Step 3
+        script: | 
+          echo "TEST2='test 2'" >> CM_ENV
+      - name: Step 4
+        script: | 
+          echo $TEST2
       - name: Set up keystore
         script: |
           echo $CM_KEYSTORE | base64 --decode > $CM_KEYSTORE_PATH
